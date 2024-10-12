@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Darsani!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="message">Hey Darsani,</h1>
+        <p class="wish">I have something special for you...</p>
+        <button onclick="showMessage()">Click to reveal</button>
+        <p id="birthdayMessage" class="hidden">🎉 Happy Birthday, Darsani! You’re amazing in every way! 🎉</p>
+        <div id="confetti"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
