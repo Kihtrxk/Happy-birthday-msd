@@ -1,0 +1,22 @@
+﻿function showMessage() {
+    const message = document.getElementById('birthdayMessage');
+    message.classList.remove('hidden');
+    launchConfetti();
+}
+
+
+function launchConfetti() {
+    const confetti = document.getElementById('confetti');
+    for (let i = 0; i < 100; i++) {
+        let div = document.createElement('div');
+        div.classList.add('confetti-piece');
+        confetti.appendChild(div);
+    }
+    document.querySelectorAll('.confetti-piece').forEach(piece => {
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        const delay = Math.random() * 5;
+        const rotate = Math.random() * 360;
+        piece.style.cssText = `left: ${x}px; top: ${y}px; animation-delay: ${delay}s; transform: rotate(${rotate}deg);`;
+    });
+}
